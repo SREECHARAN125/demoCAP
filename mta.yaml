@@ -8,11 +8,12 @@ build-parameters:
   before-all:
     - builder: custom
       commands:
+        - npm install --production
         - npx -p @sap/cds cds build --production
 modules:
   - name: MyCapApp-srv
     type: nodejs
-    path: gen/srv
+    path: srv
     parameters:
       buildpack: nodejs_buildpack
     build-parameters:
