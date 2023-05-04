@@ -12,7 +12,7 @@ build-parameters:
 modules:
   - name: MyCapApp-srv
     type: nodejs
-    path: srv #gen/srv
+    path: gen/srv
     parameters:
       buildpack: nodejs_buildpack
     build-parameters:
